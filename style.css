@@ -1,0 +1,322 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Nevegation Bar */
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: serif;
+
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background:transparent;
+    z-index: -1;
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+}
+
+#logo {
+    margin: 8px 5px;
+    padding: 0px 0px;
+    height: 60px;
+    width: 60px;
+    border-radius: 40px;
+}
+
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: .9rem;
+}
+
+#navbar ul li.items a {
+    border-radius: 25px;
+    text-decoration: none;
+    /* display: block; */
+    margin: 0px 5px;
+    padding: 9px;
+    color: white;
+    background: black;
+}
+
+#navbar ul li.items a:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+#navbar .right-nav {
+    display: flex;
+}
+
+#navbar input {
+    padding: 5px 20px;
+    margin: 7px;
+    position: relative;
+    width: 100%;
+    left: 850px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    /* border: 2px solid white; */
+    background-color: black;
+    border-radius: 20px;
+    opacity: .9;
+    color: aliceblue;
+    font-family: serif;
+}
+
+#navbar input:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+/* Home section*/
+
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 20px;
+}
+
+#home::before {
+    content: "";
+    position:absolute;
+    background: url("Image/seaint.jpg") no-repeat center center;
+    width: 100%;
+    height: 70%;
+    /* border: 3px solid red; */
+    z-index: -1;
+    opacity: .8;
+    top: 0px;
+}
+
+.heading {
+    font-size: 2.2rem;
+    padding: 06px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#home p {
+    font-size: 1.3rem;
+    padding: 2px;
+    font-family: sans-serif;
+}
+
+#home .button {
+    cursor: pointer;
+    padding: 6px 15px;
+    margin: 20px 0px;
+    border: 3px solid rgb(43, 48, 83);
+    width: 11%;
+    height: 10%;
+    border-radius: 15px;
+    background-color: transparent;
+    font-family: 'Tektur', cursive;
+    font-size: 18px;
+}
+
+
+
+/* Service section */
+
+
+#service {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heading2 {
+    text-align: center;
+    font-size: 2.2rem;
+    justify-content: center;
+    margin: 58px 0px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#service img {
+    width: 400px;
+    height: 260px;
+    border-radius: 30px;
+    margin: auto;
+}
+
+#service .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 8px;
+}
+
+#service .box .name {
+    color: rgb(123, 9, 9);
+    justify-content: center;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h {
+    margin: 0px;
+    padding: 25px;
+    width: 400px;
+    font-size: 1.1rem;
+}
+
+
+
+
+/* HISTORICAL PLACES */
+
+#historicalplaces {
+    width: 100%;
+    margin: 8px 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#historical {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heading3 {
+    align-items: center;
+    font-size: 2.2rem;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.history img {
+    width: 400px;
+    height: 260px;
+    border-radius: 30px;
+    margin: auto;
+}
+
+#historical .history {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 8px;
+}
+
+#historical .history .namehis {
+    color: rgb(123, 9, 9);
+    justify-content: center;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Contact Us */
+
+section.contact {
+    background: url(Image/contact.jpeg) no-repeat center center ;
+    background-size: cover;
+    background-blend-mode: darken;
+    opacity: .9;
+    border: 3px solid black;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+section.contact .h1 {
+    font-size: 2.8rem;
+    font-family: sans-serif;
+    margin: 13px;
+    padding: 18px;
+
+}
+
+section.contact input {
+    width: 70%;
+    margin: 15px;
+    padding: 9px;
+    border-radius: 40px;
+    background-color: rgb(144, 177, 227);
+    background: transparent;
+    color: whitesmoke;
+}
+
+section.contact textarea {
+    border-radius: 15px;
+    font-size: 1.1rem;
+    padding: 15px;
+
+}
+
+section.contact .btn-2 {
+    width: 130px;
+    margin: 10px;
+    padding: 6px;
+    border-radius: 13px;
+    font-size: 15px;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+
+}
+
+section.contact .btn-2:hover{
+    background-color: rgb(30, 90, 30);
+}
+
+
+
+footer {
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: cursive;
+}
+
